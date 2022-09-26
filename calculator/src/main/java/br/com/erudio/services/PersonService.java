@@ -19,8 +19,8 @@ public class PersonService {
         return person;
     }
 
-    public void delete(String id){
-         
+    public void deletePerson(String id){
+
     }
 
     public Person findById(String id){
