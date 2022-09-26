@@ -28,7 +28,14 @@ public class PersonController {
             produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)
     public Person create(@RequestBody Person person){
-        return service.create(person);
+        return service.createPerson(person);
+    }
+
+    @RequestMapping(method = RequestMethod.PUT,
+            produces = MediaType.APPLICATION_JSON_VALUE,
+            consumes = MediaType.APPLICATION_JSON_VALUE)
+    public Person updatePerson(@RequestBody Person person){
+        return service.updatePerson(person);
     }
 
 }

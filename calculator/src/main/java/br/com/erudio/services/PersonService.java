@@ -11,8 +11,16 @@ import java.util.concurrent.atomic.AtomicLong;
 public class PersonService {
     private final AtomicLong counter = new AtomicLong();
 
-    public Person create(Person person){
+    public Person createPerson(Person person){
         return person;
+    }
+
+    public Person updatePerson(Person person){
+        return person;
+    }
+
+    public void delete(String id){
+         
     }
 
     public Person findById(String id){
